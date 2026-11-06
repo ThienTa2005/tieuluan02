@@ -1,0 +1,3 @@
+# Neo4j + API LLM thực (chỉ cài nếu cần kết nối)
+anthropic>=0.40
+neo4j>=5.20

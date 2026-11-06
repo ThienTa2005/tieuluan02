@@ -1,0 +1,10 @@
+services:
+  tieuluan02:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      EMBEDDING_BACKEND: tfidf
+      # ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    volumes:
+      - ./data:/app/data:ro

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tieuluan02
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: EMBEDDING_BACKEND
+        value: tfidf
+      # Thêm ANTHROPIC_API_KEY / NEO4J_* trong Environment của Render nếu dùng.

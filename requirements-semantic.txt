@@ -1,0 +1,2 @@
+# Cài SAU requirements.txt để bật embedding ngữ nghĩa đa ngôn ngữ
+sentence-transformers>=3,<6
